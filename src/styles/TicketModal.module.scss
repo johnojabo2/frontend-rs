@@ -1,0 +1,79 @@
+.ticket_modal {
+  @apply absolute space-y-2 top-1/2 translate-y-[-50%] inset-x-0 mx-auto text-gray-700;
+  @apply w-[90%] md:w-[30%] z-20 bg-white rounded-md p-4 relative;
+}
+
+.icon_exit {
+  @apply absolute top-2 right-2 text-prmColor font-bold cursor-pointer;
+  @apply w-fit active:scale-75;
+  transition: 0.4s;
+}
+
+.ticket_modal h3 {
+  @apply text-center font-bold border-b border-gray-200 pb-2 w-full;
+}
+
+.ticket_modal h2 {
+  @apply text-center text-xl mt-3;
+}
+
+.destination {
+  @apply flex text-center justify-center mt-3;
+}
+
+.destination p {
+  @apply font-bold;
+}
+
+.arrow_head {
+  @apply flex items-center p-0 m-0;
+}
+
+.arrow_head .line {
+  @apply mr-[-6px] text-red-700 font-bold;
+}
+
+.arrow_head .arrow_icon {
+  @apply font-bold text-red-700;
+}
+
+.items {
+  @apply flex justify-between;
+}
+
+.label {
+  @apply text-gray-500;
+}
+
+.value,
+.label {
+  @apply flex flex-col;
+}
+
+.btn_wrapper {
+  @apply flex justify-around space-x-3 mt-4;
+}
+
+.btn_cancel {
+  @apply flex justify-center items-center w-fit text-white bg-prmColor py-2 px-8 rounded-lg disabled:active:scale-100;
+  @apply active:scale-95 hover:bg-color3 disabled:bg-gray-300 disabled:cursor-not-allowed;
+  transition: 0.3s;
+}
+
+.btn_print {
+  @apply flex justify-center items-center w-fit text-white bg-prmColor py-2 px-8 rounded-lg disabled:active:scale-100;
+  @apply active:scale-95 hover:bg-color3 disabled:bg-gray-300 disabled:cursor-not-allowed;
+  transition: 0.3s;
+}
+
+.btn_yes {
+  @apply flex justify-center items-center w-fit text-white bg-red-600 py-1 px-8 rounded-lg disabled:active:scale-100;
+  @apply active:scale-95 hover:bg-red-700 disabled:bg-gray-300 disabled:cursor-not-allowed;
+  transition: 0.3s;
+}
+
+.btn_no {
+  @apply flex justify-center items-center w-fit text-white bg-prmColor py-1 px-8 rounded-lg disabled:active:scale-100;
+  @apply active:scale-95 hover:bg-color3 disabled:bg-gray-300 disabled:cursor-not-allowed;
+  transition: 0.3s;
+}

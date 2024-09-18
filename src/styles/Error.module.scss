@@ -1,0 +1,35 @@
+$navColorHover: #eb0f5b;
+
+.hero {
+  @apply m-0 p-0 h-screen w-full;
+}
+
+.logo {
+  @apply absolute top-4 lg:top-6 left-6 w-[31%] h-auto md:w-[22%] lg:w-3/12;
+}
+
+.errorContent {
+  @apply absolute top-1/2 translate-y-[-50%] inset-x-0;
+  @apply w-full p-0 m-0 mx-auto text-center;
+}
+
+.errorContent span {
+  word-spacing: normal;
+  letter-spacing: normal;
+  font-weight: bolder;
+  @apply text-prmColor p-0 m-0 inline-block text-[8rem];
+}
+
+.errorContent p {
+  @apply relative mx-auto mt-[-2rem] p-0 w-[80%] mb-4;
+  @apply font-bold text-color3;
+}
+
+.errorContent a {
+  background: $navColorHover;
+  color: #eaeaea;
+  padding: 0.5rem 1rem;
+  font-size: medium;
+  border-radius: 25px;
+  @apply hover:bg-color3 bg-prmColor mt-60 relative; 
+}
